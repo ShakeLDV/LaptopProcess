@@ -7,8 +7,8 @@ function Test-Admin {
 
 function Input_Windows_Key {
     Set-Location $PSScriptRoot
-    windows_key = (Get-Content .\key.txt)
-    Set-WindowsProductKey -Path "C:\Windows" -ProductKey windows_key
+    $windows_key = (Get-Content .\key.txt)
+    Set-WindowsProductKey -Path "C:\Windows" -ProductKey $windows_key
 }
 
 
